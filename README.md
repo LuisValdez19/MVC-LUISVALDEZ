@@ -15,7 +15,7 @@ Se trata de un modelo muy maduro y que ha demostrado su validez a lo largo de lo
 
 
 
-## Ejemplo de MVC
+## Ejemplo de MODELO
 
 ![App Screenshot](https://codigofacilito.com/photo_generales_store/29.jpg)
 
@@ -23,7 +23,7 @@ Se trata de un modelo muy maduro y que ha demostrado su validez a lo largo de lo
 
 En la capa Modelo encontraremos siempre una representación de los datos del dominio, es decir, aquellas entidades que nos servirán para almacenar información del sistema que estamos desarrollando. Por ejemplo, si estamos desarrollando una aplicación de facturación, en el modelo existirán las clases Factura, Cliente o Proveedor, entre otras.
 
-## Funcionalidades de MVC
+## Funcionalidades deL MODELO
 
 - Separación de las tareas de aplicación (lógica de entrada, lógica de negocios y lógica de interfaz de usuario), capacidad de prueba y desarrollo controlado por pruebas (TDD) de forma predeterminada.
 
@@ -38,7 +38,7 @@ En la capa Modelo encontraremos siempre una representación de los datos del dom
 - Separación clara de dónde tiene que ir cada tipo de lógica, facilitando el mantenimiento y la escalabilidad de nuestra aplicación.
 
 
-## Ejemplo Modelo Vista Controlador
+## Ejemplo Modelo 
 
 ```javascript
 <?php
