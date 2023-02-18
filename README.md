@@ -37,6 +37,58 @@ En la capa Modelo encontraremos siempre una representación de los datos del dom
 
 - Separación clara de dónde tiene que ir cada tipo de lógica, facilitando el mantenimiento y la escalabilidad de nuestra aplicación.
 
+# Vista
+
+La Vista, o interfaz de usuario, que compone la información que se envía al cliente y los mecanismos interacción con éste.
+
+Las vistas, como su nombre nos hace entender, contienen el código de nuestra aplicación que va a producir la visualización de las interfaces de usuario, o sea, el código que nos permitirá renderizar los estados de nuestra aplicación en HTML. En las vistas nada más tenemos los códigos HTML y PHP que nos permite mostrar la salida.
+
+En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un acceso directo a éstos. Las vistas requerirán los datos a los modelos y ellas se generará la salida, tal como nuestra aplicación requiera.
+
+
+## Imagen Vista
+
+![App Screenshot](https://codigosdeprogramacion.com/cursos/wp-content/uploads/2017/06/MVC.jpg)
+
+
+## Ejemplo Vista
+
+```javascript
+
+//VISTA
+
+<style>
+    th{
+        width: 8rem;
+        text-align: left;
+        border-bottom: 1px solid black;
+    }
+    td{
+        width: 8rem;
+    }
+</style>
+
+<h1>Ejemplo 5: Listado de coches</h1>
+<table>
+    <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Color</th>
+        <th>Propietario</th>
+    </tr>
+    <?php foreach ($rowset as $row): ?>
+
+        <tr>
+            <td><?php echo $row->marca ?></td>
+            <td><?php echo $row->modelo ?></td>
+            <td><?php echo $row->color ?></td>
+            <d><?php echo $row->propietario ?></td>
+        </tr>
+
+     <?php endforeach; ?>
+</table>
+
+
 
 ## Ejemplo Modelo 
 
