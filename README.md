@@ -44,6 +44,7 @@ En la capa Modelo encontraremos siempre una representación de los datos del dom
 <?php
 
 //MODELO
+
 class Coche
 {
     //Variables o atributos
@@ -109,70 +110,5 @@ class Coche
         return $this->propietario;
 
     }
-}
-
-
-//VISTA
-
-<style>
-    th{
-        width: 8rem;
-        text-align: left;
-        border-bottom: 1px solid black;
-    }
-    td{
-        width: 8rem;
-    }
-</style>
-
-<h1>Ejemplo 5: Listado de coches</h1>
-<table>
-    <tr>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Color</th>
-        <th>Propietario</th>
-    </tr>
-    <?php foreach ($rowset as $row): ?>
-
-        <tr>
-            <td><?php echo $row->marca ?></td>
-            <td><?php echo $row->modelo ?></td>
-            <td><?php echo $row->color ?></td>
-            <d><?php echo $row->propietario ?></td>
-        </tr>
-
-     <?php endforeach; ?>
-</table>
-
-//CONTROLADOR
-
-<?php
-
-class CocheController
-{
-    var $coches;
-
-    function __construct()
-    {
-        $this->coches = [
-            1 => new Coche("Wolkswagen","Polo","negro","Rebeca"),
-            2 => new Coche("Toyota","Corolla","verde","Marcos"),
-            3 => new Coche("Skoda","Octavia","gris","Mario"),
-            4 => new Coche("Kia","Niro","azul","Jairo")
-        ];
-    }
-
-    public function index(){
-
-        //Asigno los coches a una variable que estará esperando la vista
-        $rowset = $this->coches;
-
-
-        //Le paso los datos a la vista
-        require("view/index.php");
-
-    }
-
 }
 
