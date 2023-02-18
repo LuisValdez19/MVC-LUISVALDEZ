@@ -23,7 +23,7 @@ Se trata de un modelo muy maduro y que ha demostrado su validez a lo largo de lo
 
 En la capa Modelo encontraremos siempre una representación de los datos del dominio, es decir, aquellas entidades que nos servirán para almacenar información del sistema que estamos desarrollando. Por ejemplo, si estamos desarrollando una aplicación de facturación, en el modelo existirán las clases Factura, Cliente o Proveedor, entre otras.
 
-## Funcionalidades deL MODELO
+## Funcionalidades del MODELO
 
 - Separación de las tareas de aplicación (lógica de entrada, lógica de negocios y lógica de interfaz de usuario), capacidad de prueba y desarrollo controlado por pruebas (TDD) de forma predeterminada.
 
@@ -112,3 +112,4 @@ class Coche
     }
 }
 
+## Hola
