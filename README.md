@@ -31,7 +31,7 @@ El uso de este patrón ayuda a separar las responsabilidades en el desarrollo de
 
 - Facilita las pruebas: La separación de responsabilidades en el MVC permite una mayor facilidad para realizar pruebas unitarias de las diferentes partes de la aplicación.
 
-# En general, el patrón de diseño MVC ayuda a mejorar la calidad, escalabilidad, mantenibilidad, seguridad y reutilización del código en aplicaciones de software.
+En general, el patrón de diseño MVC ayuda a mejorar la calidad, escalabilidad, mantenibilidad, seguridad y reutilización del código en aplicaciones de software.
 
 ## Ejemplo de MODELO
 
