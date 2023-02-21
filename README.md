@@ -50,6 +50,21 @@ En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un
 
 ![App Screenshot](https://codigosdeprogramacion.com/cursos/wp-content/uploads/2017/06/MVC.jpg)
 
+## Controlador
+
+El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.
+
+### Responsable de:
+
+- Recibe los eventos de entrada (un clic, un cambio en un campo de texto, etc.).
+
+- Contiene reglas de gestión de eventos, del tipo "SI Evento Z, entonces Acción W". Estas acciones pueden suponer peticiones al modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al método "Actualizar()". Una petición al modelo puede ser "Obtener_tiempo_de_entrega ( nueva_orden_de_venta )". 
+
+## Imagen Controlador
+
+![App Screenshot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgNMZYHclYsC-36KggyTxQYuUmsnxyH8ADaQ&usqp=CAU)
+
+
 
 ## Ejemplo Vista
 
@@ -90,7 +105,7 @@ En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un
 
 
 
-## Ejemplo Modelo 
+// Modelo 
 
 ```javascript
 <?php
@@ -162,4 +177,35 @@ class Coche
         return $this->propietario;
 
     }
+}
+
+// Controlador
+
+<?php
+
+class CocheController
+{
+    var $coches;
+
+    function __construct()
+    {
+        $this->coches = [
+            1 => new Coche("Wolkswagen","Polo","negro","Rebeca"),
+            2 => new Coche("Toyota","Corolla","verde","Marcos"),
+            3 => new Coche("Skoda","Octavia","gris","Mario"),
+            4 => new Coche("Kia","Niro","azul","Jairo")
+        ];
+    }
+
+    public function index(){
+
+        //Asigno los coches a una variable que estará esperando la vista
+        $rowset = $this->coches;
+
+
+        //Le paso los datos a la vista
+        require("view/index.php");
+
+    }
+
 }
