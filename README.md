@@ -17,6 +17,21 @@ Se trata de un modelo muy maduro y que ha demostrado su validez a lo largo de lo
 
 El uso de este patrón ayuda a separar las responsabilidades en el desarrollo de una aplicación, lo que facilita la mantenibilidad y escalabilidad del código. Además, permite que varios desarrolladores trabajen en diferentes componentes de la aplicación simultáneamente.
 
+## Benificios del Modelo Vista Controlador
+
+- Separación de responsabilidades: El MVC separa la lógica de negocio, la presentación y el control de eventos en diferentes componentes. Esto facilita la modificación, el mantenimiento y la escalabilidad del código.
+
+- Reutilización de código: La separación de responsabilidades también permite la reutilización de código en diferentes aplicaciones o módulos de la misma aplicación.
+
+- Facilita el trabajo en equipo: El patrón MVC facilita el trabajo en equipo, ya que diferentes desarrolladores pueden trabajar en diferentes partes del código sin interferir con el trabajo de otros desarrolladores.
+
+- Mejora la legibilidad del código: El MVC promueve la escritura de código claro y organizado, lo que facilita su comprensión y modificación.
+
+- Mejora la seguridad: Al separar la lógica de negocio y la presentación, el MVC puede mejorar la seguridad de la aplicación, ya que reduce la exposición de la lógica de negocio a posibles vulnerabilidades de seguridad.
+
+- Facilita las pruebas: La separación de responsabilidades en el MVC permite una mayor facilidad para realizar pruebas unitarias de las diferentes partes de la aplicación.
+
+# En general, el patrón de diseño MVC ayuda a mejorar la calidad, escalabilidad, mantenibilidad, seguridad y reutilización del código en aplicaciones de software.
 
 ## Ejemplo de MODELO
 
