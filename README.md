@@ -50,7 +50,7 @@ En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un
 
 ![App Screenshot](https://codigosdeprogramacion.com/cursos/wp-content/uploads/2017/06/MVC.jpg)
 
-## Controlador
+# Controlador
 
 El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.
 
