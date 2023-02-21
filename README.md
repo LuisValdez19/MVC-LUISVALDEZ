@@ -63,6 +63,21 @@ Las vistas, como su nombre nos hace entender, contienen el código de nuestra ap
 
 En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un acceso directo a éstos. Las vistas requerirán los datos a los modelos y ellas se generará la salida, tal como nuestra aplicación requiera.
 
+## Beneficios de la Vista
+
+- Separación de responsabilidades: La vista se encarga exclusivamente de la presentación de la información al usuario y no tiene conocimiento directo de la lógica de negocio. Esto permite una clara separación de responsabilidades entre la presentación y la lógica de negocio.
+
+- Flexibilidad: La vista puede ser diseñada de diferentes maneras, lo que permite adaptar la aplicación a diferentes dispositivos y necesidades de los usuarios.
+
+- Facilita la mantenibilidad: La separación clara entre la vista y la lógica de negocio facilita la identificación y corrección de errores y la modificación y actualización del código.
+
+- Mejora la legibilidad del código: La vista se encarga exclusivamente de la presentación, lo que permite que el código sea más claro y legible.
+
+- Facilita la accesibilidad: Una vista bien diseñada puede mejorar la accesibilidad para personas con discapacidades visuales o motoras.
+
+- Mejora la usabilidad: La vista puede ser diseñada para mejorar la usabilidad de la aplicación, lo que puede mejorar la experiencia del usuario y aumentar la satisfacción.
+
+En resumen, la vista en el patrón MVC tiene varios beneficios, como la separación de responsabilidades, la flexibilidad, la facilidad de mantenimiento, la legibilidad del código, la accesibilidad y la usabilidad, que contribuyen a mejorar la calidad y la eficiencia del desarrollo de aplicaciones de software.
 
 ## Imagen Vista
 
@@ -77,6 +92,20 @@ El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestio
 - Recibe los eventos de entrada (un clic, un cambio en un campo de texto, etc.).
 
 - Contiene reglas de gestión de eventos, del tipo "SI Evento Z, entonces Acción W". Estas acciones pueden suponer peticiones al modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al método "Actualizar()". Una petición al modelo puede ser "Obtener_tiempo_de_entrega ( nueva_orden_de_venta )". 
+
+## Beneficios del Controlador
+
+- Manejo de eventos: El controlador maneja los eventos generados por la interfaz de usuario y los procesa en consecuencia. Esto permite una separación clara entre la presentación y la lógica de negocio.
+
+- Flexibilidad: El controlador permite una mayor flexibilidad en la forma en que se manejan los eventos y se procesa la lógica de negocio, lo que permite adaptar la aplicación a diferentes situaciones y requisitos.
+
+- Facilita la mantenibilidad: El controlador separa la lógica de negocio de la presentación, lo que facilita la identificación y corrección de errores y la modificación y actualización del código.
+
+- Reutilización de código: El controlador puede ser reutilizado en diferentes aplicaciones o módulos de la misma aplicación, lo que facilita el desarrollo y reduce los costos y tiempos de entrega
+
+- Escalabilidad: El controlador puede ser escalado según sea necesario, lo que permite manejar grandes volúmenes de eventos y datos sin afectar el rendimiento de la aplicación.
+
+En resumen, el controlador en el patrón MVC tiene varios beneficios, como la separación de responsabilidades, la flexibilidad, la facilidad de mantenimiento, la reutilización de código y la escalabilidad, que contribuyen a mejorar la calidad y la eficiencia del desarrollo de aplicaciones de software.
 
 ## Imagen Controlador
 
