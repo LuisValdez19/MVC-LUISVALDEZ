@@ -13,6 +13,9 @@ Se trata de un modelo muy maduro y que ha demostrado su validez a lo largo de lo
 
 - El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.
 
+## ¿En que nos ayuda el Modelo Vista Controlador?
+
+El uso de este patrón ayuda a separar las responsabilidades en el desarrollo de una aplicación, lo que facilita la mantenibilidad y escalabilidad del código. Además, permite que varios desarrolladores trabajen en diferentes componentes de la aplicación simultáneamente.
 
 
 ## Ejemplo de MODELO
@@ -63,8 +66,6 @@ El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestio
 ## Imagen Controlador
 
 ![App Screenshot](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgNMZYHclYsC-36KggyTxQYuUmsnxyH8ADaQ&usqp=CAU)
-
-
 
 ## Ejemplo Vista
 
